@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Пешие прогулки">
+  <title>Forest Home</title>
+  <link rel="preload" href="fonts/RobotoSlab-Medium.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoSlab-Regular.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoSlab-Medium.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoSlab-Regular.woff" as="font" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header container">
+      <div class="container nav-container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="38" height="37" viewBox="0 0 38 37" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g style="mix-blend-mode:lighten" filter="url(#filter0_d_13_7)">
+                    <rect y="0.925415" width="37" height="37" fill="url(#pattern2)" />
+                  </g>
+                  <defs>
+                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_13_7" transform="scale(0.027027)" />
+                    </pattern>
+                    <image id="image0_13_7" width="37" height="37"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="38" height="37" viewBox="0 0 38 37" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g style="mix-blend-mode:lighten">
+                    <rect x="0.666656" width="37" height="37" fill="url(#pattern1)" />
+                  </g>
+                  <defs>
+                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_13_9" transform="scale(0.027027)" />
+                    </pattern>
+                    <image id="image0_13_9" width="37" height="37"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="37" height="38" viewBox="0 0 37 38" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g style="mix-blend-mode:lighten">
+                    <rect y="0.925415" width="37" height="37" fill="url(#pattern0)" />
+                  </g>
+                  <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_13_11" transform="scale(0.027027)" />
+                    </pattern>
+                    <image id="image0_13_11" width="37" height="37"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAFCElEQVRYCcWYzWscdRjHZ3a7SVyNu5md133PZrOJBxURLIKiePIvkNpDEQreigelXjwqjaWaNO9JKx7ECtXgrXjQg5pEUFMTFCuomJddW7Feigrpzs5Xvs/uJLENzGaTsAu//GZ+s5nfZ56X7/PMKgmngIMcPVYe/tDsXnD499eTfVvH/tpus7LbYqtrBODGO0cr9zowKN8qvpU4+2v+3CzggUD5m+42Nwuy83v7hroTxEr3g8NMFWX4rty5adDxvqDuBOK52hlH6B4NHfcZiMZsdCfSEviEI2gQEK/vGUqzCkjY9Q0MOw87lUcoHIGqqjh27Dm8/MppnDr1Eo4/fwJPPPkMuuMW4mYGZrYEPdt/OFDdWkaePGFm4WQKUJQj+GjuY/BTrW6iVqvBdV05v/bjz1CUDljJuux0G5nDgaKVmFnp3IBs+Muva/AEAQIE1OBWN2Xl22+WoYY6YDoFxM0cjNQhWYpA9LsaieL0q68J0OZmtYEFwLsNgnmehx++/0ksaVg5mE4fjOQhQTFgnVwJihrBwuLXAlOrbTMtLnyJubk5XLnyCcbGp7fcZyWLMOxDUvRuPQPNzokFyuXfIabyAM8DPv3sc1lnnMlQG/Fk5nGoUFZ2AAknK5v+9edNwK3VwQC8PTwGVe2CaWehGRmYqQLiDWWnHGhG3fVBsrBnSaD7CMUArmyUAa8G1Dy4rofhkQkoSlSs4uQGYVBA0/2ImTkpOS3rVMxIi8j1mL2iRwxOm8PulfigHoXDYdGl1dV1gWFE0X1nzrwJJaQgFFagKCEoigJdzyCuOzBTg9DsFsWTqhwzsgImQukUQJFUlE688fpZrKysYGlpCYuLi6hWqzKYafxUKhUsfDWPq8vfYXn5KsbHZiQhTKcoMmKmB1vTKb901N1UkKA2GjH0/qXLsjkF0hdJCqUPxTWPOtUIs9HRGSiiU0VpZ/YFZUswFyQeeqwszGQOoUgXJmdm/wdV1yMXrlvXJjknlFeVpHzh5IuIdGkS8GaqJEEfFOS71j6mLgNyO0hZUNPihg8uzwkU//jW8cE8j6WlLliuV5Ojhx89ingiC51lhvUy3ap4mlnxO92n2dspfSSq4fiJk7gw+y5Gz09iePg8bt36ewuS1pqf/wLnzp3FxOQsJmcuouteU9wft/qgp5pvu++ShLiebgRjHUpPlmCkBuRJ1UgMIbUDqhIRndpYvy5QvtWGhoYkKykX4Y4oYnquoVNFJJJ5cWNL7mPxpCzoySKszAPosUtIOINI2GzcBpFKFmCZGYFaX2soekMSpqamRAZMy5EibKVZvEuiUQyHuJlqLfuCnyQvmcQycqNS3nIfBXRs8gIUVYHuFGFY/dKyaMmGcDp9Yu3g+7fQ5CWceqkgVHltdRvKA0bGptsDJZnElnUXqNFximUbLMUiSxcwmK+XN8RSFE0K0/jUxfZA7XRfZX1tO/s8oG2WosLTUnTfxupvWwWZgf7WyHj7LEXFJ9TNP27A7zprVRcT0++0B8rKUL9KCIU7sfnvP+I+dgvu7Sreu/Rhe6D4csmCHY07GHjwMTz+1LN45OjTMuf6H2pKHIO06q4yE/QPfkvDma9NhLxfz8jw33SC7hF0fc9Q/J2AN/VbW8L5gIQM2rCZ63uGYhNIIAJwZnwRii7ltWY2DfpOS1B+d0ow33VsodvmPlqFT8pZLNX46YdrbbMUN2dcEcAHpMV4fFBQ/wEsUHBp4NOa/gAAAABJRU5ErkJggg==" />
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item nav__item--button">
+              <button class="btn btn__nav" type="button">Купить билет</button>
+            </li>
+            <li class="nav__item nav__item--form">
+              <form class="nav__form" action="" method="get">
+                <input class="nav__form-input" name="search" placeholder="Поиск" type="search">
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero-container">
+          <h1 class="hero__title visually-hidden">Forest Home</h1>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/main-logo-desktop.png">
+            <img class="hero__logo" src="img/main-logo.png" width="352" height="70" alt="Forest Home.">
+          </picture>
+        </div>
+      </section>
+      <section class="order container">
+        <div class="order-wrapper">
+          <div class="order-container">
+            <svg class="balls" width="85" height="20" viewBox="0 0 85 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_i_0_1)">
+                <circle cx="10" cy="10" r="10" fill="#94C04C" />
+              </g>
+              <g filter="url(#filter1_i_0_1)">
+                <circle cx="42.2246" cy="10" r="10" fill="#94C04C" />
+              </g>
+              <g filter="url(#filter2_i_0_1)">
+                <circle cx="74.4482" cy="10" r="10" fill="#94C04C" />
+              </g>
+              <defs>
+                <filter id="filter0_i_0_1" x="0" y="0" width="20" height="24" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1" />
+                </filter>
+                <filter id="filter1_i_0_1" x="32.2246" y="0" width="20" height="24" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1" />
+                </filter>
+                <filter id="filter2_i_0_1" x="64.4482" y="0" width="20" height="24" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1" />
+                </filter>
+              </defs>
+            </svg>
+
+            <h2 class="order__title"> Пеший тур</h2>
+            <p class="order__description">Под руководством опытного инструктора. Вы научитесь ориентироваться в
+              незнакомой
+              местности, строить убежище из природных материалов, добывать и очищать воду, разводить огонь, добывать
+              пищу,
+              использовать лекарственные растения. <br>
+              <br>
+              А также правильно вести себя при встрече с дикими животными. Поход будет проходит в настоящем дремучем
+              лесу
+              с живописной маленькой речушкой, на берегу которой есть родник с чистейшей и вкусной водой.
+            </p>
+          </div>
+          <div class="order-img-wrapper">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/order-img-desktop.png">
+              <img class="order__img" src="img/order-img.png" width="372" height="407" alt="Пешие прогулки.">
+            </picture>
+            <button type="button" class="btn btn-order" id="myButton" data-open-modal">Записаться на пеший тур</button>
+          </div>
+        </div>
+      </section>
+      <section class="equipment container">
+        <h2 class="equipment__title equipment__title--mobile"> Снаряжение </h2>
+        <div class="equipment-container">
+          <div class="equipment-block">
+            <h3 class="equipment-block__title"> Общегрупповое снаряжение </h3>
+            <p class="equipment-block__description">
+              Место в рюкзаке должно оставаться для общественного снаряжения и продуктов (примерно 3-7 кг). Если Ваши
+              личные вещи занимают более 2/3 рюкзака - просто оставьте часть вещей дома.
+              <br>
+              <br>
+              Вместе с личными вещами участники везут полученное в Клубе групповое снаряжение: палатки, продукты, котлы
+              и костровое снаряжение, тент от дождя, топор, аптечку, ремонтный набор.
+              <br>
+              <br>
+              Общественное снаряжение направляется в поход и возвращается с участниками.
+            </p>
+          </div>
+          <div class="equipment-block">
+            <h3 class="equipment-block__title">Оставьте лишнее дома</h3>
+            <p class="equipment-block__description">
+              Всё перечисленное снаряжение должно весить 8-12 кг
+              (в зависимости от качества самих вещей и продуманности сборов).
+              <br>
+              <br>
+              Зачастую лишний вес набирается большими объёмами шампуней, книгами, гантелями и прочим. Оставьте это дома!
+            </p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-about btn-equip" id="myButton" data-open-modal">Подробнее</button>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+
+
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <div class="modal-container">
+          <div class="form-container-modal">
+            <h2 class="form__title"> Пожалуйста заполните форму </h2>
+          </div>
+          <form class="form-ask-modal" action="https://echo.htmlacademy.ru/courses" method="get" name="Modal-form">
+            <div class="fieldset-data">
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form-input" name="Name" type="text" minlength="1" placeholder="Имя" id="Name"
+                    aria-label="Имя пользователя." required>
+                </li>
+                <li class="form__item">
+                  <input class="form-input" name="SurName" type="text" minlength="1" placeholder="Фамилия" id="SurName"
+                    aria-label="Имя пользователя." required>
+                </li>
+                <li class="form__item">
+                  <div class="input-group" data-validate-type="phone" data-required>
+                    <input class="form-input" data-validate-field="tel" type="tel" id="phone-modal"
+                      placeholder="Номер телефона" aria-label="Номер телефона." name="Phone"
+                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" required>
+                  </div>
+                </li>
+                <li class="form__item">
+                  <input class="form-input" type="email" name="Email" placeholder="Электронная почта"
+                    aria-label="Электронная почта." required>
+                </li>
+              </ul>
+            </div>
+            <p class="form-help">Если возникли какие-то проблемы, то звоните по этому номеру: +7(924) 835-80-67 </p>
+            <div class="form-ask-container-modal">
+              <button class="btn btn-form" type="submit">Отправить форму</button>
+            </div>
+          </form>
+        </div>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.177086 1.03109C-0.0587882 0.795211 -0.0587881 0.412781 0.177087 0.176905C0.412961 -0.0589705 0.79539 -0.0589706 1.03126 0.176905L10.0001 9.14577L18.9689 0.17691C19.2048 -0.0589653 19.5872 -0.0589653 19.8231 0.176911C20.059 0.412786 20.059 0.795217 19.8231 1.03109L10.8543 9.99996L19.8232 18.9689C20.0591 19.2048 20.0591 19.5872 19.8232 19.8231C19.5873 20.059 19.2049 20.059 18.969 19.8231L10.0001 10.8541L1.03118 19.8231C0.795303 20.059 0.412874 20.059 0.176999 19.8231C-0.0588753 19.5872 -0.0588755 19.2048 0.176999 18.9689L9.14592 9.99996L0.177086 1.03109Z"
+              fill="white" />
+          </svg>
+
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-about modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal-about__overlay" data-close-modal></div>
+      <div class="modal-about__content">
+        <div class="modal-about-container">
+          <h2 class="modal-about__title"> Что же взять с собой в поход? </h2>
+          <p class="modal-about__p">Специально для вас мы составили чек лист на эту тему</p>
+          <ul class="modal-about__list">
+            <li class="modal-about__item">
+              <p class="modal-about__p">Сидушка (пенка для сидения, «подпопник») Для сидения на земле, чтобы было сухо,
+                тепло и штаны были чистыми.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Рюкзак до 30 л. (оставить место под продовольственный паёк 2-3 л)</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Набор посуды (кружка, миска, ложка, нож)
+                Пластик или сталь, не керамика/стекло. Пластиковая посуда не обжигает руки, металлическая легче
+                отмывается , термо - сохраняет горячее (это где-то плюс, а где-то минус), – выбирайте что более по душе.
+                Нож не обязателен.
+                Пластик или сталь, не керамика/стекло. Пластиковая посуда не обжигает руки, металлическая легче
+                отмывается , термо - сохраняет горячее (это где-то плюс, а где-то минус), – выбирайте что более по душе.
+                Нож не обязателен.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Головной убор (панама, бандана, кепка) Светлый, для защиты от солнца.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Дождевик (можно одноразовый) а можно и нет :)</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Резиновые сапоги Есть сапоги из лёгкого материала - ЭВА. Значительно меньше
+                весят. Можно взять с собой по погоде.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Удобная обувь для трекинга - ботинки или кроссовки Основная обувь. Удобная,
+                разношенная. Ходить будем много.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Деньги Деньги на то, что не входит в стоимость путевки, а также на сувениры.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Фотокамера По желанию. Обязательно продумать защиту на случай осадков.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Личная аптечка Привычные лекарства лично для вас. На группу будет общая аптечка
+                с медикаментами.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Бутылка с питьевой водой 1 - 1,5 литра</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Средство от комаров, средство от клещей с учётом сезона и региона</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Маленький термос (по желанию) Для горячего чая.</p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Крем от загара Маленький тюбик. Если идёте компанией, можно взять один на всех.
+              </p>
+            </li>
+            <li class="modal-about__item">
+              <p class="modal-about__p">Маленький термос (по желанию) Для горячего чая.</p>
+            </li>
+          </ul>
+        </div>
+        <button class="modal-about__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.177086 1.03109C-0.0587882 0.795211 -0.0587881 0.412781 0.177087 0.176905C0.412961 -0.0589705 0.79539 -0.0589706 1.03126 0.176905L10.0001 9.14577L18.9689 0.17691C19.2048 -0.0589653 19.5872 -0.0589653 19.8231 0.176911C20.059 0.412786 20.059 0.795217 19.8231 1.03109L10.8543 9.99996L19.8232 18.9689C20.0591 19.2048 20.0591 19.5872 19.8232 19.8231C19.5873 20.059 19.2049 20.059 18.969 19.8231L10.0001 10.8541L1.03118 19.8231C0.795303 20.059 0.412874 20.059 0.176999 19.8231C-0.0588753 19.5872 -0.0588755 19.2048 0.176999 18.9689L9.14592 9.99996L0.177086 1.03109Z"
+              fill="white" />
+          </svg>
+
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.header {
+    z-index: 2;
+    @include vp-768 {
+        background-color: #484A4F;
+        border-radius: 40px;
+        width: 70%;
+        max-width: 743px;
+        margin-top: 20px;
+    }
+    @include vp-1024 {
+        background-color: #484A4F;
+        border-radius: 40px;
+        width: 70%;
+        max-width: 743px;
+        min-height: 87px;
+        margin-top: 20px;
+    }
+}

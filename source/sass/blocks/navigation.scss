@@ -1,0 +1,91 @@
+.btn__nav {
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: $color-dark-green;
+    border-radius: 40px;
+    padding: 10px 19px;
+}
+
+.nav__link {
+    display: block;
+    width: 38px;
+    height: 37px;
+    border-radius: 40px;
+    background-color: $color-dark-green;
+    ;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.nav__form-input {
+    font-family: $ff-robotomed;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 40px;
+    border: 0;
+    background-color: $color-light-grey;
+    color: $color-default-white;
+    outline: 0;
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+
+    @include vp-1024 {
+        font-size: 18px;
+    }
+
+}
+
+.nav__form-input::placeholder {
+    color: $color-default-white;
+}
+
+.nav__item {
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+
+.nav__item--form {
+    width: 100%;
+    padding-right: 0;
+
+    @include vp-768 {
+        width: 200px;
+    }
+
+    @include vp-1024 {
+        max-width: 168px;
+    }
+}
+
+.nav__item--button {
+    padding-right: 0;
+
+    @include vp-768 {
+        margin-right: 20px;
+    }
+}
+
+.nav-container {
+    padding-top: 50px;
+
+    @include vp-1024 {
+        padding-top: 25px;
+    }
+}
+
+.nav__svg {
+    border-radius: 40px;
+}

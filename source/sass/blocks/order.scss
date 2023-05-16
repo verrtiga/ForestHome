@@ -1,0 +1,119 @@
+.order {
+    background-color: #232628;
+}
+
+.order__title {
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-default-white;
+    letter-spacing: 0.01em;
+    margin: 0;
+    text-align: center;
+}
+
+.balls {
+    position: absolute;
+    top: 30px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.order__description {
+    margin: 0;
+    font-family: $ff-robotoreg;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: $color-default-white;
+    margin-top: 23px;
+    text-align: center;
+
+    @include vp-1024 {
+        font-size: 21px;
+        line-height: 28px;
+    }
+}
+
+.order-container {
+    position: relative;
+    margin-top: 117px;
+    margin-bottom: 25px;
+    border-radius: 40px;
+    padding: 120px 30px;
+    // min-width: 320px;
+    background-color: $color-grey;
+
+    @include vp-768 {
+        grid-column: 2/3;
+    }
+
+    @include vp-1024 {
+        min-height: 672px;
+        max-width: 340px;
+        margin-top: 200px;
+    }
+
+}
+
+.order__img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 26px;
+
+    @include vp-768 {
+        margin-left: 0;
+    }
+
+    @include vp-1024 {
+        width: 542px;
+        height: 623px;
+        margin-top: 200px;
+    }
+
+}
+
+.btn-order {
+    background-color: #94C04C;
+    border-radius: 40px;
+    font-family: $ff-robotomed;
+    padding: 20px 35px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 20px;
+
+    @include vp-768 {
+        margin-top: 50px;
+    }
+
+    @include vp-1024 {
+        margin-left: 63px;
+    }
+}
+
+.order-wrapper {
+    @include vp-768 {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+}
+
+.order-img-wrapper {
+    @include vp-768 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    }
+}

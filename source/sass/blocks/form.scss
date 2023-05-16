@@ -1,0 +1,97 @@
+.form__title {
+    font-family: $ff-robotoreg;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: $color-default-white;
+    text-align: center;
+    opacity: 0.9;
+
+    @include vp-768 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.form-input {
+    border: 0;
+    width: 100%;
+    max-width: 350px;
+    background-color: $color-grey;
+    border-radius: 40px;
+    padding: 8px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    outline: 0;
+
+    @include vp-768 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form__item {
+    margin-bottom: 20px;
+}
+
+.form-help {
+    font-family: $ff-robotoreg;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: $color-default-white;
+    opacity: 0.7;
+
+    @include vp-768 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.btn-form {
+    border-radius: 40px;
+    background-color: #94C04C;
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    @include vp-768 {
+        font-size: 27px;
+        line-height: 36px;
+        padding: 22px 62px;
+    }
+}
+
+
+.form-input:hover {
+    outline: 1px solid $color-default-white;
+}
+
+.form-input:focus {
+    outline: 2px solid $color-default-white;
+}
+
+.form-input:disabled {
+    background-color: rgba(255, 255, 255, 0.3);
+}

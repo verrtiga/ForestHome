@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "RobotoSlab-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/RobotoSlab-Medium.woff2") format(woff2),
+    url("../fonts/RobotoSlab-Medium.woff") format(woff);
+  font-display: block;
+}
+
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/RobotoSlab-Regular.woff2") format(woff2),
+    url("../fonts/RobotoSlab-Regular.woff") format(woff);
+  font-display: block;
+}
