@@ -2,13 +2,33 @@
     display: none;
 }
 
+.equipment__title {
+    @include vp-768 {
+        display: inline-block;
+        font-family: $ff-robotomed;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 46px;
+        // border-radius: 40px;
+        color: $color-default-white;
+        text-align: center;
+        background-color: $color-grey;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+}
+
 .equipment-container {
     position: relative;
     z-index: 1;
     background-image: url("../../img/equipment-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    border-radius: 59px;
     padding: 17px 13px;
 }
 
@@ -23,6 +43,7 @@
     text-align: center;
     color: $color-default-white;
     text-transform: uppercase;
+
 
 }
 
@@ -40,6 +61,15 @@
 
 .equipment-block {
     position: relative;
+    padding: 20px 30px;
+    margin-bottom: 40px;
+
+    @include vp-1024 {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
 }
 
 .equipment-block::after {

@@ -1,0 +1,8 @@
+.container-fat {
+    @include vp-1024 {
+        max-width: 1302px;
+        margin: 0 auto;
+        padding: 0 167px;
+        width: 100%;
+    }
+}
