@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     padding: 17px 13px;
-    
+
     @include vp-1024 {
         min-height: 1039px;
         display: flex;
@@ -27,15 +27,19 @@
     line-height: 24px;
     text-align: left;
     color: $color-default-white;
+
+    @include vp-1024 {
+        font-size: 27px;
+        line-height: 36px;
+    }
 }
 
 .guitar-block {
     position: relative;
     padding: 20px 30px;
-    
+
     @include vp-1024 {
-        width: 40%;
-        // margin-top: 150px;
+        width: 50%;
     }
 }
 

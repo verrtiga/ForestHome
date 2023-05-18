@@ -162,7 +162,7 @@
           <div class="order-img-wrapper">
             <picture>
               <source media="(min-width: 1024px)" srcset="img/order-img-desktop.png">
-              <img class="order__img" src="img/order-img.png" width="372" height="407" alt="Пешие прогулки.">
+              <img class="order__img" src="img/order-img.png" width="372" height="407" alt="Пешие прогулки." id="order">
             </picture>
             <button type="button" class="btn btn-order" id="myButton" data-open-modal">Записаться на пеший тур</button>
           </div>
@@ -211,8 +211,10 @@
                 (Гитара не нужна для туров с проживанием в гостинице и на турбазе).
               </p>
             </div>
-            <div class="service">
-              <h3 class="service__title"> Что включено в стоимость</h3>
+          </div>
+          <div class="service">
+            <div class="sevice-block service-block--desk">
+              <h3 class="service__title"> Что включено в стоимость:</h3>
               <ul class="service__list">
                 <li class="service__item">
                   <p class="service__desc"> Питание во время занятия.</p>
@@ -230,8 +232,48 @@
                   <p class="service__desc">Групповая аптечка.</p>
                 </li>
               </ul>
-              <button type="button" class="btn btn-order btn-order--hidden" id="myButton" data-open-modal">Записаться на пеший тур</button>
+              <button type="button" class="btn btn-order btn-scroll btn-order--mobile" id="scroll"
+                data-open-modal">Записаться на пеший
+                тур</button>
             </div>
+            <div class="service-wrapper">
+              <div class="service-block service-block--mobile">
+                <h3 class="service__title service__title--sale">Скидки:</h3>
+                <ul class="service__list">
+                  <li class="service__item">
+                    <p class="service__desc">10% по Клубной карте</p>
+                  </li>
+                  <li class="service__item">
+                    <p class="service__desc">Студентам</p>
+                  </li>
+                </ul>
+              </div>
+              <picture>
+                <source media="(min-width:768px)" srcset="img/service-img-desk.png">
+                <img class="service__img" src="img/service-img.png" width="219" height="219" alt="Изображение палатки.">
+              </picture>
+            </div>
+          </div>
+          <button type="button" class="btn btn-order btn-scroll btn-order--desk" id="scroll" data-open-modal">Записаться
+            на пеший
+            тур</button>
+        </div>
+      </section>
+      <section class="info">
+        <h2 class="info__title"> Информация о маршруте </h2>
+        <div class="container-fat">
+          <div class="info-block">
+            <p class="info-block__desc">Наш поход пройдет по лесным дорожкам и тропинкам, пересекающим редкие болотца.
+              Весь путь нас будут сопровождать звуки леса и свежий воздух. За время путешествия мы увидим, как сильно
+              может измениться растительность на относительно небольшом участке леса, найдем бьющий прямо из под земли
+              ключ, заберемся на обрыв над излучиной реки Рощинка.
+              <br>
+              <br>
+              Особо внимательные смогут найти и определить следы диких животных, а возможно и их владельцев! Часть пути
+              пройдет вдоль реки, тропинку будет пересекать множество ключей и ручейков.
+              <br>
+              <br>
+              И, конечно, мы не забудем о хорошем обеде на природе!</p>
           </div>
         </div>
       </section>

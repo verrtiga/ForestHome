@@ -43,6 +43,11 @@
     color: $color-default-white;
     text-transform: uppercase;
 
+    @include vp-1024 {
+        font-size: 27px;
+        line-height: 36px;
+    }
+
 
 }
 
@@ -56,6 +61,11 @@
     line-height: 24px;
     text-align: left;
     color: $color-default-white;
+
+    @include vp-1024 {
+        font-size: 27px;
+        line-height: 36px;
+    }
 }
 
 .equipment-block {

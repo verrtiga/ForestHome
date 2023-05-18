@@ -1,6 +1,6 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
 import { initPhoneInput } from './modules/form-validate/init-phone-input';
 
 // ---------------------------------
@@ -12,9 +12,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
 
+
+  const scrollButton = document.getElementById('scroll');
+  const button2 = document.getElementById('order');
+
+  scrollButton.addEventListener('click', () => {
+    button2.scrollIntoView({ behavior: 'smooth' });
+  });
+
   // Mask-input 
 
-  
+
 
   let parent = document.querySelector('.input-group');
   initPhoneInput(parent);
@@ -73,11 +81,11 @@ window.addEventListener('DOMContentLoaded', () => {
         closeModal();
       }
     });
-    
+
     modalOverlay.addEventListener('click', function () {
       closeModal();
     })
-    
+
 
     let parent = modal.querySelector('.input-group');
 
@@ -133,11 +141,11 @@ window.addEventListener('DOMContentLoaded', () => {
       closeModal();
     }
   });
-  
+
   modalAboutOverlay.addEventListener('click', function () {
     closeModal();
   })
-  
+
 
 });
 

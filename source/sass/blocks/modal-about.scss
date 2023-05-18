@@ -66,6 +66,10 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 40px;
 
+        @include vp-1024 {
+            width: 1053px;
+        }
+
     }
 
     &__close-btn {
@@ -130,6 +134,11 @@
     line-height: 18px;
     color: $color-default-white;
     opacity: 0.9;
+
+    @include vp-1024 {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
 
 .modal-about__p {
@@ -141,6 +150,11 @@
     text-align: center;
     color: $color-default-white;
     opacity: 0.9;
+
+    @include vp-1024 {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
 
 .modal-about__list {
@@ -151,6 +165,10 @@
 
 .modal-about__item {
     position: relative;
+
+    @include vp-1024 {
+        margin-bottom: 38px;
+    }
 }
 
 .modal-about__item::before {
