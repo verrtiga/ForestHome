@@ -2429,6 +2429,78 @@ button,
   }
 }
 
+.cause {
+  background-color: #484A4F;
+  border-radius: 40px;
+  padding: 35px 35px;
+  margin-top: 27px;
+  margin-bottom: 67px;
+}
+@media (min-width: 1024px) {
+  .cause {
+    margin-top: 67px;
+  }
+}
+
+.cause__desc {
+  font-family: "RobotoSlab-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+}
+@media (min-width: 1024px) {
+  .cause__desc {
+    font-size: 27px;
+    line-height: 36px;
+  }
+}
+
+.cause__title {
+  font-family: "RobotoSlab-Medium", "Arial", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (min-width: 1024px) {
+  .cause__title {
+    font-size: 46px;
+    line-height: 61px;
+  }
+}
+
+.cause__list {
+  list-style-type: none;
+}
+
+.cause__item {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .cause__item::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #94c04c;
+    border-radius: 40px;
+    left: -27px;
+    top: 13px;
+  }
+}
+
+.btn-cause {
+  display: block;
+  margin: 0 auto;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
