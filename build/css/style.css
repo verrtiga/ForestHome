@@ -562,6 +562,19 @@ button,
   }
 }
 
+.container-fat {
+  width: 100%;
+  max-width: 454px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .container-fat {
+    padding: 0 40px;
+    width: 100%;
+    max-width: 848px;
+  }
+}
 @media (min-width: 1024px) {
   .container-fat {
     max-width: 1302px;
@@ -1952,6 +1965,66 @@ button,
   border-radius: 40px;
   left: -27px;
   top: 3px;
+}
+
+.guitar {
+  position: relative;
+  z-index: 1;
+  background-image: url("../../img/guitar-back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 59px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 17px 13px;
+}
+@media (min-width: 1024px) {
+  .guitar {
+    min-height: 1039px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.guitar__desc {
+  position: relative;
+  z-index: 2;
+  font-family: "RobotoSlab-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.guitar-block {
+  position: relative;
+  padding: 20px 30px;
+}
+@media (min-width: 1024px) {
+  .guitar-block {
+    width: 40%;
+  }
+}
+
+.guitar-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0D0D0D;
+  opacity: 0.46;
+  border-radius: 40px;
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* @mixin hover-focus {
