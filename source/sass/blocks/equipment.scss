@@ -29,6 +29,10 @@
     height: 100%;
     border-radius: 59px;
     padding: 17px 13px;
+
+    @include vp-1024 {
+        padding: 29px 84px;
+    }
 }
 
 .equipment-block__title {
@@ -74,7 +78,7 @@
     margin-bottom: 40px;
 
     @include vp-1024 {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 100px;
     }

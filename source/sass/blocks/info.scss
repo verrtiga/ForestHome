@@ -1,0 +1,90 @@
+.info__title {
+    display: inline-block;
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-default-white;
+    text-align: center;
+    background-color: $color-grey;
+    width: 100%;
+    text-transform: uppercase;
+
+    @include vp-768 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+}
+
+.info__title--uppercase {
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    @include vp-1024 {
+        font-size: 46px;
+        line-height: 61px;
+    }
+}
+
+.info-block__desc {
+    position: relative;
+    z-index: 2;
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: $color-default-white;
+
+    @include vp-1024 {
+        font-size: 27px;
+        line-height: 36px;
+    }
+}
+
+.info-block {
+    position: relative;
+    padding: 20px 50px;
+    margin-bottom: 40px;
+
+    @include vp-1024 {
+        padding: 40px 30px;
+    }
+}
+
+.info-block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0D0D0D;
+    opacity: 0.46;
+    border-radius: 40px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.info-container {
+    position: relative;
+    z-index: 1;
+    background-image: url("../../img/info-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+
+    @include vp-1024 {
+        min-height: 1583px;
+        padding: 82px 98px;
+    }
+}
