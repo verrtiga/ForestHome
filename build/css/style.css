@@ -1526,7 +1526,7 @@ button,
 @media (min-width: 1024px) {
   .order__img {
     width: 542px;
-    height: 623px;
+    height: 581px;
     margin-top: 200px;
   }
 }
@@ -2499,6 +2499,103 @@ button,
 .btn-cause {
   display: block;
   margin: 0 auto;
+}
+
+.nature-block {
+  border-radius: 40px;
+  padding: 35px 35px;
+  margin-bottom: 24px;
+}
+
+.nature-block--img {
+  background-image: url(../../img/nature-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 59px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 17px 13px;
+  margin-top: 36px;
+}
+@media (min-width: 1024px) {
+  .nature-block--img {
+    background: none;
+  }
+}
+
+.nature-block--grey {
+  background-color: #484A4F;
+}
+@media (min-width: 1024px) {
+  .nature-block--grey {
+    background-color: transparent;
+  }
+}
+
+.nature-block-container {
+  position: relative;
+  padding: 20px 30px;
+}
+
+.nature-block-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0D0D0D;
+  opacity: 0.46;
+  border-radius: 40px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nature-block__desc {
+  font-family: "RobotoSlab-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  z-index: 2;
+  position: relative;
+  color: #ffffff;
+}
+@media (min-width: 1024px) {
+  .nature-block__desc {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nature {
+    background-image: url(../../img/nature-background.png);
+    min-height: 1523px;
+  }
+}
+
+.nature-block-container-desktop {
+  position: relative;
+  padding: 20px 30px;
+}
+
+@media (min-width: 1024px) {
+  .nature-block-container-desktop::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0D0D0D;
+    opacity: 0.46;
+    border-radius: 40px;
+    z-index: 1;
+    pointer-events: none;
+  }
 }
 
 /* @mixin hover-focus {

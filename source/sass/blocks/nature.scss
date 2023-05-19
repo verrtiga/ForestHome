@@ -1,0 +1,96 @@
+.nature-block {
+    border-radius: 40px;
+    padding: 35px 35px;
+    margin-bottom: 24px;
+}
+
+.nature-block--img {
+    background-image: url(../../img/nature-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 59px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 17px 13px;
+    margin-top: 36px;
+
+
+    @include vp-1024 {
+        background: none;
+    }
+}
+
+.nature-block--grey {
+    background-color: $color-grey;
+
+    @include vp-1024 {
+        background-color: transparent;
+    }
+}
+
+.nature-block-container {
+    position: relative;
+    padding: 20px 30px;
+
+}
+
+.nature-block-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0D0D0D;
+    opacity: 0.46;
+    border-radius: 40px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.nature-block__desc {
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    z-index: 2;
+    position: relative;
+
+    color: $color-default-white;
+
+    @include vp-1024 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
+
+.nature {
+    @include vp-1024 {
+        background-image: url(../../img/nature-background.png);
+        min-height: 1523px;
+    }
+}
+
+.nature-block-container-desktop {
+    position: relative;
+    padding: 20px 30px;
+}
+
+.nature-block-container-desktop::after {
+    @include vp-1024 {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0D0D0D;
+        opacity: 0.46;
+        border-radius: 40px;
+        z-index: 1;
+        pointer-events: none;
+    }
+}
