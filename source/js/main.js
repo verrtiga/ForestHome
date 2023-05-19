@@ -27,6 +27,13 @@ window.addEventListener('DOMContentLoaded', () => {
     button22.scrollIntoView({ behavior: 'smooth' });
   });
 
+  const scrollButton3 = document.getElementById('scroll3');
+  const button33 = document.getElementById('order');
+
+  scrollButton3.addEventListener('click', () => {
+    button33.scrollIntoView({ behavior: 'smooth' });
+  });
+
   // Mask-input 
 
 

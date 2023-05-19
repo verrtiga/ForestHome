@@ -1,0 +1,71 @@
+.boss {
+    background-color: $color-grey;
+    border-radius: 40px;
+    padding: 35px 35px;
+    margin-top: 27px;
+    margin-bottom: 67px;
+
+    @include vp-1024 {
+        max-width: 682px;
+        min-height: 1060px;
+        margin: 0 auto;
+        margin-top: 71px;
+
+    }
+}
+
+.boss__title {
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 37px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 26px;
+    color: $color-default-white;
+
+    @include vp-1024 {
+        font-size: 46px;
+        line-height: 61px;
+    }
+}
+
+.boss__desc {
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: $color-default-white;
+
+    @include vp-1024 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
+
+.boss__img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.btn-boss--mobile {
+    @include vp-1024 {
+    display: none;
+    }
+}
+
+.btn-boss--desktop {
+    display: none; 
+
+    @include vp-1024 {
+        display: block;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+}
