@@ -2530,6 +2530,7 @@ button,
 @media (min-width: 1024px) {
   .nature-block--grey {
     background-color: transparent;
+    margin-top: 340px;
   }
 }
 
@@ -2573,7 +2574,10 @@ button,
 @media (min-width: 1024px) {
   .nature {
     background-image: url(../../img/nature-background.png);
+    background-repeat: no-repeat;
     min-height: 1523px;
+    padding: 64px 40px;
+    margin-top: 46px;
   }
 }
 

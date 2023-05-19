@@ -26,6 +26,7 @@
 
     @include vp-1024 {
         background-color: transparent;
+        margin-top: 340px;
     }
 }
 
@@ -70,7 +71,10 @@
 .nature {
     @include vp-1024 {
         background-image: url(../../img/nature-background.png);
+        background-repeat: no-repeat;
         min-height: 1523px;
+        padding: 64px 40px;
+        margin-top: 46px;
     }
 }
 
