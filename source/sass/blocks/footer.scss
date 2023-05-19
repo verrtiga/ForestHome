@@ -1,3 +1,68 @@
 .footer {
-    background-color: $color-default-black;
+    background-color: #484A4F;
+}
+
+.footer__title {
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: $color-default-white;
+}
+
+.footer-home__button {
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+
+    color: $color-default-white;
+
+}
+
+.footer__desc {
+    font-family: $ff-robotomed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: $color-default-white;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+
+    @include vp-1024 {
+        display: flex;
+    }
+}
+
+.footer-contacs {
+    grid-row: 1/2;
+
+    @include vp-1024 {
+        margin-left: 50px;
+    }
+}
+
+.footer-about {
+    @include vp-1024 {
+        width: 50%;
+        margin-left: 50px;
+    }
 }

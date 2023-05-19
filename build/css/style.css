@@ -2638,6 +2638,7 @@ button,
     min-height: 1060px;
     margin: 0 auto;
     margin-top: 71px;
+    margin-bottom: 50px;
   }
 }
 
@@ -2687,6 +2688,9 @@ button,
   margin-bottom: 20px;
 }
 
+.btn-boss--mobile {
+  margin-bottom: 30px;
+}
 @media (min-width: 1024px) {
   .btn-boss--mobile {
     display: none;
@@ -2705,7 +2709,89 @@ button,
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #484A4F;
+}
+
+.footer__title {
+  font-family: "RobotoSlab-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.footer-home__button {
+  font-family: "RobotoSlab-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer__desc {
+  font-family: "RobotoSlab-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+@media (min-width: 1024px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer-contacs {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+@media (min-width: 1024px) {
+  .footer-contacs {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-about {
+    width: 50%;
+    margin-left: 50px;
+  }
 }
 
 /* @mixin hover-focus {

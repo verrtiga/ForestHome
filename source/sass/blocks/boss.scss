@@ -10,6 +10,7 @@
         min-height: 1060px;
         margin: 0 auto;
         margin-top: 71px;
+        margin-bottom: 50px;
 
     }
 }
@@ -55,6 +56,7 @@
 }
 
 .btn-boss--mobile {
+    margin-bottom: 30px;
     @include vp-1024 {
     display: none;
     }
