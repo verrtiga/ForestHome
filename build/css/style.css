@@ -65,6 +65,7 @@ pre {
 */
 a {
   background-color: transparent;
+  color: #fff;
 }
 
 /**
@@ -540,6 +541,14 @@ button,
           box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.hide {
+  display: none;
+}
+
+.highlight {
+  background-color: #484A4F;
+}
+
 .container {
   width: 100%;
   max-width: 454px;
@@ -728,6 +737,17 @@ button,
 
 .modal__close-btn:active {
   opacity: 0.5;
+}
+
+.modal__link {
+  text-decoration: none;
+  font-family: "RobotoSlab-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 
 .custom-input,
@@ -1687,6 +1707,8 @@ button,
     font-size: 27px;
     line-height: 36px;
     padding: 22px 62px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -2578,6 +2600,7 @@ button,
     min-height: 1523px;
     padding: 64px 40px;
     margin-top: 46px;
+    border-radius: 50px;
   }
 }
 
@@ -2679,6 +2702,10 @@ button,
     margin: 0 auto;
     margin-top: 45px;
   }
+}
+
+.footer {
+  background-color: #000000;
 }
 
 /* @mixin hover-focus {

@@ -21,7 +21,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="https://vk.com/anat0ly48">
                 <svg class="nav__svg" width="38" height="37" viewBox="0 0 38 37" fill="none"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g style="mix-blend-mode:lighten" filter="url(#filter0_d_13_7)">
@@ -76,7 +76,10 @@
             </li>
             <li class="nav__item nav__item--form">
               <form class="nav__form" action="" method="get">
-                <input class="nav__form-input" name="search" placeholder="Поиск" type="search">
+                <div class="search-container">
+                  <input class="nav__form-input" name="search" placeholder="Поиск" type="search" id="searchInput">
+                  <div id="searchResults" class="search-results"></div>
+                </div>
               </form>
             </li>
           </ul>
@@ -147,7 +150,7 @@
               </defs>
             </svg>
 
-            <h2 class="order__title"> Пеший тур</h2>
+            <h2 class="order__title "> Пеший тур</h2>
             <p class="order__description">Под руководством опытного инструктора. Вы научитесь ориентироваться в
               незнакомой
               местности, строить убежище из природных материалов, добывать и очищать воду, разводить огонь, добывать
@@ -401,15 +404,10 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-block">
-        <ul class="footer-block__list">
-          <li class="footer-block__item"></li>
-          <li class="footer-block__item"></li>
-        </ul>
-        </div>
-        <div class="footer-block">
+      <div class="footer-container">
 
-        </div>
+      </div>
+
       </div>
     </footer>
   </div>
@@ -438,7 +436,7 @@
                   <div class="input-group" data-validate-type="phone" data-required>
                     <input class="form-input" data-validate-field="tel" type="tel" id="phone-modal"
                       placeholder="Номер телефона" aria-label="Номер телефона." name="Phone"
-                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" required>
+                       minlength="18" required>
                   </div>
                 </li>
                 <li class="form__item">
@@ -447,7 +445,7 @@
                 </li>
               </ul>
             </div>
-            <p class="form-help">Если возникли какие-то проблемы, то звоните по этому номеру: +7(924) 835-80-67 </p>
+            <p class="form-help">Если возникли какие-то проблемы, то звоните по этому номеру: <a class="modal__link" href="tel:+79248358067">+7(924) 835-80-67</a></p>
             <div class="form-ask-container-modal">
               <button class="btn btn-form" type="submit">Отправить форму</button>
             </div>
@@ -464,6 +462,25 @@
       </div>
     </div>
   </div>
+
+  <div id="successModal" class="modal">
+    <div class="modal__content">
+      <h2 class="modal__title">Успешно отправлено!</h2>
+      <p class="modal__message">Ваша форма была успешно отправлена.</p>
+      <button class="modal__close-btn">Закрыть</button>
+    </div>
+    <div class="modal__overlay"></div>
+  </div>
+  
+  <div id="errorModal" class="modal">
+    <div class="modal__content">
+      <h2 class="modal__title">Ошибка отправки</h2>
+      <p class="modal__message">Возникла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.</p>
+      <button class="modal__close-btn">Закрыть</button>
+    </div>
+    <div class="modal__overlay"></div>
+  </div>
+  
 
   <div class="modal-about modal--preload" data-modal="feedback">
     <div class="modal__wrapper">

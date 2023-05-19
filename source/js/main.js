@@ -34,6 +34,64 @@ window.addEventListener('DOMContentLoaded', () => {
     button33.scrollIntoView({ behavior: 'smooth' });
   });
 
+  const searchInput = document.getElementById('searchInput');
+  const headings = document.querySelectorAll('h2,h1,h3');
+
+  searchInput.addEventListener('input', () => {
+    const searchText = searchInput.value.toLowerCase();
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(section => {
+      section.classList.remove('highlight');
+    });
+
+    headings.forEach(heading => {
+      const headingText = heading.textContent.toLowerCase();
+
+      if (headingText.includes(searchText)) {
+        heading.classList.add('highlight');
+        heading.setAttribute('id', `heading-${headingText}`);
+      } else {
+        heading.classList.remove('highlight');
+        heading.removeAttribute('id');
+      }
+    });
+  });
+
+  searchInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      const searchText = searchInput.value.toLowerCase();
+
+      headings.forEach(heading => {
+        const headingText = heading.textContent.toLowerCase();
+
+        if (headingText.includes(searchText)) {
+          heading.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  });
+  
+
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const allAnchorLinks = document.querySelectorAll('a[href^="#heading-"]');
+
+    allAnchorLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
+
+
   // Mask-input 
 
 
@@ -43,6 +101,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
